@@ -1,0 +1,11 @@
+1. JavaScript Variables
+
+1.1 Variable Declaration
+Variables are like containers for storing values. We can create a variable using the let,var,const keyword.
+
+var  --> declares a variable with function or global scope and is hoisted to the top.
+let --> declares a block-scoped variable that is not hoisted and can be updated but not redeclared in the same scope.
+const --> declares a block-scoped variable that cannot be updated or redeclared, and must be initialized at the time of declaration.
+
+1.2 Assigning a Value to the Variable
+We can put data into a variable using an assignment operator (=).
