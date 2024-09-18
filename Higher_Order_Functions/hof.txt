@@ -1,0 +1,31 @@
+Higher-Order Functions:
+-----------------------
+Higher-order functions are a fundamental concept in JavaScript and functional programming.
+ Understanding them can greatly enhance your ability to write concise and powerful code. 
+ 
+A higher-order function is a function that:
+Takes one or more functions as arguments, or
+Returns a function as a result.
+
+1. Function as an Argument
+----------------------------
+You can pass a function as an argument to another function. This is useful for operations that need to be customizable.
+
+Example: Array map() Method
+
+The map() method is a classic higher-order function. It applies a function to each item in an array and returns a new array with the results.
+
+
+const numbers = [1, 2, 3, 4, 5];
+
+// Function to double each number
+function double(number) {
+    return number * 2;
+}
+
+// Using map() with the double function
+const doubledNumbers = numbers.map(double);
+
+console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
+
+
