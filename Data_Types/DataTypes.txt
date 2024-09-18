@@ -1,0 +1,20 @@
+JavaScript values or Data Types are of two categories.
+1.Primitive Types
+2.Non Primitive or Reference Types 
+
+1.1 Primitive Types
+    Number
+    Boolean
+    String
+    Undefined 
+
+Primitive-Type	 Description
+
+Number	  -      All the numbers are of Number type.
+Boolean	  -      Boolean values are either true or false.
+String	  -      String is a stream of characters. The String should be enclosed with Single quotes, Double quotes, or Backticks.
+Undefined -      If a value is not assigned to the variable, then it takes undefined as its value. In JS, undefined refers to the value that is not being assigned.
+Null      -      Represents the intentional absence of any value. It is explicitly set to indicate "no value.
+BigInt    -      Used for numbers larger than the Number type can safely represent (greater than 2^53 - 1).
+Symbol    -      A unique and immutable value, often used to create unique property keys for objects.
+
