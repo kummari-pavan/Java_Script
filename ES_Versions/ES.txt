@@ -1,0 +1,17 @@
+1.ES6 Features:
+--------------
+class
+Modularization
+Arrow function
+Function parameter defaults
+Template string
+Destructuring assignment
+Extension operator
+Object attribute shorthand
+Promise
+Let and Const 
+
+class:Used For Defining The Objects
+
+Modularization: Importing ,Exporting
+
