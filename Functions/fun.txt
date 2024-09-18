@@ -1,0 +1,17 @@
+3 Types Of JavaScript 
+
+1. Function Declarations
+Definition: A function declaration defines a named function. It can be called before it is defined in the code due to hoisting.
+
+2. Function Expressions
+Definition: A function expression defines a function and assigns it to a variable. It is not hoisted, so it must be defined before 
+it is used.
+
+3. Arrow Functions
+Definition: Arrow functions provide a concise syntax for writing functions. They do not have their own this context and are typically 
+used for short functions.
+
+4.Anonymous Functions
+An anonymous function is simply a function that does not have a name. Unlike named functions, which are declared with a name for easy 
+reference, anonymous functions are usually created for specific tasks and are often assigned to variables or used as arguments for other 
+functions.
