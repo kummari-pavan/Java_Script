@@ -1,0 +1,20 @@
+Java Script architecture 
+
+Single-threaded: 
+----------------
+JavaScript works on one task at a time, which means it can do only one thing at a time.
+This makes it easy to manage but can slow down if there are big tasks.
+
+Event-driven:   
+------------- 
+JavaScript waits for actions to happen, like a click on a button, and then runs the code related to that event.
+
+Non-blocking:  
+------------- 
+Even though it's single-threaded, JavaScript doesn't get stuck waiting for something like data from the internet.
+It keeps running other code until the data is ready.
+
+JavaScript Engine:
+-----------------
+The code runs in a special engine inside the web browser.
+This engine turns our code into machine language that the computer understands.
