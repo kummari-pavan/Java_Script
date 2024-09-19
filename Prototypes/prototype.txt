@@ -1,0 +1,32 @@
+Prototypes in JavaScript: ------->inheritance
+-------------------------
+In JavaScript, prototypes are a key feature of the language's inheritance system. Every JavaScript object has an internal link to another 
+object called its prototype. This prototype object allows objects to share properties and methods, enabling inheritance in JavaScript.
+
+How Prototypes Work:
+-------------------
+In JavaScript, objects are created using functions,we are call it as constructors. Each C function has a prototype property, which is used to 
+build the inheritance chain. When you create a new object from a constructor function, it links that object to the constructor's prototype, 
+allowing the object to inherit properties and methods from the prototype.
+
+Prototypal Inheritance vs. Classical Inheritance:
+-------------------------------------------------
+JavaScript uses prototypal inheritance, unlike classical inheritance in languages like Java or C++. In classical inheritance, objects inherit
+ from classes. In prototypal inheritance, objects inherit from other objects via their prototype.
+
+Classical Inheritance: create instances from classes.
+---------------------
+Prototypal Inheritance: Objects inherit from other objects. There are no “classes”; instead, objects share behavior through prototype
+----------------------
+
+Prototype Property vs __proto__ :
+---------------------------------
+prototype :- This is a property of constructor functions. It allows objects created from that constructor to inherit properties and methods.
+__proto__ :- This is an internal property of all objects. It refers to the object's prototype.
+
+Conclusion:
+----------
+---> Every JavaScript object has a prototype, which allows objects to inherit properties and methods from other objects.
+---> Prototypal inheritance allows objects to share behavior without needing a class system.
+---> You can extend the behavior of objects by modifying their prototype.
+---> The prototype chain is how JavaScript looks up properties and methods in an inheritance hierarchy.
