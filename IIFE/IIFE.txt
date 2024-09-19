@@ -1,0 +1,102 @@
+IIFE in JavaScript:
+-------------------
+An IIFE (Immediately Invoked Function Expression) is a JavaScript function that:
+
+Defines itself and,
+Runs immediately after being defined.
+This function is executed right away, without needing to be called explicitly later. 
+It's useful for 
+1.encapsulating code and 
+2.avoiding polluting the global scope.
+3.Creating a Private Scope
+4. Avoiding Name Conflicts ---> arrow function
+
+IIFE Syntax:
+--------------
+(function() {
+    //  code here
+})();
+
+Explanation:
+------------
+(function() {...}): This is the function expression, wrapped inside 
+parentheses to treat it as an expression rather than a declaration.
+(): This set of parentheses immediately invokes the function.
+
+Example:
+--------
+(function() {
+    console.log("This function runs immediately!");
+})();
+//Output: "This function runs immediately!"
+
+In this case:
+The function is defined and immediately invoked (executed).
+It prints the message without needing to be called separately.
+
+Why Use IIFE:
+------------
+1.Encapsulation:
+--------------
+ Variables and functions inside an IIFE are private to that function and don’t interfere with other parts of your code.
+ This helps in preventing global variable pollution.
+
+2.Avoiding Global Variables: 
+--------------------------
+In JavaScript, variables declared outside of a function become part of the global scope. 
+IIFEs help avoid this by keeping everything inside its own scope.
+
+
+Example: Encapsulating Variables
+-------------------------------
+(function() {
+    var message = "Hello, World!";
+    console.log(message);
+})();
+
+console.log(message);  // Error: message is not defined
+
+Explanation:
+-----------
+Inside the IIFE, the variable message is defined and printed.
+Outside the IIFE, if you try to access message, it results in an error because message only exists within the IIFE.
+
+IIFE with Parameters
+------------------------
+You can also pass parameters to an IIFE like a normal function:
+
+(function(name) {
+    console.log("Hello, " + name);
+})("Pavan");
+
+3.Creating a Private Scope:
+--------------------------
+Imagine you're working on a web page, and you want to ensure that your variables don’t accidentally overwrite global variables that 
+may already exist. You can use an IIFE to create a private scope:
+
+(function() {
+    var count = 0;
+    // count is only available within this IIFE
+    count++;
+    console.log(count);  // Output: 1
+})();
+
+// Outside, count is not accessible
+console.log(count);  // Error: count is not defined
+
+4.Avoiding Name Conflicts:
+-------------------------
+When working with multiple scripts, there could be name conflicts if multiple scripts define variables or functions with the same name. IIFEs help prevent 
+this by containing everything within their own scope.
+
+
+(() => {
+    console.log("This is an arrow function IIFE!");
+})();
+
+Conclusion:
+----------
+---> IIFE (Immediately Invoked Function Expression) is a function that is defined and executed immediately.
+---> It helps in encapsulating code, preventing global variable pollution, and avoiding name conflicts.
+---> Syntax: (function() { ... })();
+---> You can also pass parameters and use modern arrow functions to create IIFEs.
