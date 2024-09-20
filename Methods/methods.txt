@@ -1,0 +1,50 @@
+What is call(), apply(), and bind() in JavaScript?
+-------------------------------------------------
+In JavaScript, call(), apply(), and bind() are methods that allow you to change the this context of a function. This is useful when you 
+want to control what this refers to when invoking a function, especially if you're borrowing methods or working with different objects.
+
+
+1. call() Method:
+-----------------
+The call() method invokes a function immediately and allows you to specify the value of this and pass arguments individually.
+
+Syntax:
+functionName.call(thisValue, arg1, arg2, ...);
+
+
+2. apply() Method:
+-----------------
+The apply() method is similar to call(), but instead of passing arguments individually, you pass them as an array.
+
+Syntax:
+functionName.apply(thisValue, [arg1, arg2, ...]);
+
+3. bind() Method:
+----------------
+The bind() method does not call the function immediately. Instead, it creates a new function with a fixed this value, which can be 
+called later. It is often used when you want to set this permanently for a function.
+
+Syntax:
+const newFunction = functionName.bind(thisValue, arg1, arg2, ...);
+
+Why Use call(), apply(), and bind():
+-----------------------------------
+Control this: 
+In JavaScript, the this keyword can change depending on how a function is called. These methods allow you to control and 
+set the this value manually, giving you more control over which object a function operates on.
+
+Function Borrowing: 
+You can borrow methods from one object and use them for another object.
+
+Avoid Code Duplication: 
+Instead of writing the same function for multiple objects, you can use call(), apply(), or bind() to reuse a function with different this values.
+
+Applications and Advantages:
+---------------------------
+Dynamic Context: You can dynamically set the this context for a function at runtime, which is helpful in certain cases like event handling or when working with libraries.
+Function Borrowing: Instead of duplicating code, you can use these methods to borrow functions from one object and use them with another object.
+Partial Functions: With bind(), you can create a new function where some arguments are pre-set, useful for event listeners or callback functions
+
+call() : Use when you want to immediately invoke a function and pass arguments one by one.
+apply(): Use when you want to invoke a function and pass arguments as an array.
+bind() : Use when you want to create a new function with a fixed this context for later use.
