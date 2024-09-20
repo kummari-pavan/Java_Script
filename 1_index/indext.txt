@@ -1,0 +1,28 @@
+CONTENT & TOPICS :
+----------------
+1. What is JavaScript
+2. Applications
+3. Data Types
+4. Variables
+5. Functions
+6. Synchrounou and Asynchrounous
+7. Architecture of Js 
+8. Waiting On Bridge 
+9. Event loop in js
+10.callbacks
+11.Promises
+12.async
+13.await
+14.i/o operations and Methods
+15.Array Methods
+16.String Methods
+17.ES versions and Features
+18.Hoisting
+19.Clouser
+20.Higher Order Functions 
+21.IIFE
+22.Prototypes
+23.Generators 
+24.REPL
+25.Methods ->Call,Apply,Bind
+26.Promises all Methods
