@@ -1,3 +1,5 @@
+closures Concept related to scope in this way we can access out scope variables and functions
+
 function outer() {
     let name = 'Pavan K';
   
